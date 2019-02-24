@@ -10,7 +10,16 @@
 
 
     <Button
-            android:text="Button"
+            android:text="버튼입니다"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/button"/>
+    <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button2" android:layout_margin="10dp"/>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button3" android:layout_gravity="right"
+            android:gravity="bottom" android:background="#e1e1e1" tools:text="BUTTON"/>
 </LinearLayout>
