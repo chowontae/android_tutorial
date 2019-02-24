@@ -3,14 +3,24 @@ package kr.co.talknv.an1_helloworld
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    var text2:TextView? = null;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         Log.d("abcd", "on create");
+
+        text2 = findViewById<TextView>(R.id.textView4)
+        text2?.text = "문자열2"
+        text2?.setText("문자열10")
+        textView4.text = "문자열4"
+
     }
 
     override fun onStart() {
